@@ -43,7 +43,7 @@ MapleDumper is a memory scanning tool designed to locate specific byte patterns 
    GodMode = "?? ?? ?? 12 34"
 Ensure that the section markers (#64BIT: and #32BIT:) are formatted exactly as shown.
 
-Compilation
+### Project compiling
 Open the project in your preferred C++ IDE (e.g., Visual Studio).
 Select the appropriate build configuration (32-bit or 64-bit) based on your target.
 Build the project.
@@ -54,7 +54,8 @@ The tool will wait for MapleStory.exe to start if it isn’t already running.
 It then reads the patterns from patterns.txt, scans the target process memory, and prints the results to the console.
 Found addresses are appended to update.txt in the executable’s directory, with separate sections for 64-bit and 32-bit addresses.
 
-Example Console Output
+### Example Console Output
+ ```plaintext
 Select architecture (32/64): 64
 Waiting for MapleStory.exe...
 Reading patterns from E:\MapleDumper\x64\Release\patterns.txt...
