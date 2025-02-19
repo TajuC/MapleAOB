@@ -1,6 +1,6 @@
-# MapleDumper
+# MapleAOB
 
-MapleDumper is a memory scanning tool designed to locate specific byte patterns within the memory of MapleStory.exe. It supports both 32-bit and 64-bit processes, reading patterns from a configuration file and saving results to a unified output file with separate sections for each architecture.
+MapleAOB is a memory scanning tool designed to locate specific byte patterns within the memory of MapleStory.exe. It supports both 32-bit and 64-bit processes, reading patterns from a configuration file and saving results to a unified output file with separate sections for each architecture.
 
 ## Features
 
@@ -30,7 +30,7 @@ MapleDumper is a memory scanning tool designed to locate specific byte patterns 
 
 ### Configuration
 
-1. Create a file named `patterns.txt` in the same directory as `MapleDumper.exe`.
+1. Create a file named `patterns.txt` in the same directory as `MapleAOB.exe`.
 2. Format the file with separate sections for 64-bit and 32-bit patterns. For example:
 
    ```plaintext
@@ -48,7 +48,7 @@ Open the project in your preferred C++ IDE (e.g., Visual Studio).
 Select the appropriate build configuration (32-bit or 64-bit) based on your target.
 Build the project.
 Running the Tool
-Run MapleDumper.exe.
+Run MapleAOB.exe.
 When prompted, select the architecture by entering 32 or 64.
 The tool will wait for MapleStory.exe to start if it isn’t already running.
 It then reads the patterns from patterns.txt, scans the target process memory, and prints the results to the console.
@@ -58,10 +58,10 @@ Found addresses are appended to update.txt in the executable’s directory, with
  ```plaintext
 Select architecture (32/64): 64
 Waiting for MapleStory.exe...
-Reading patterns from E:\MapleDumper\x64\Release\patterns.txt...
+Reading patterns from E:\MapleAOB\x64\Release\patterns.txt...
 Scanning memory...
 Found CRC_CALL at 0x142BE3635
 Found CRC_MAIN at 0x142BE362F
 Found Damage at 0x6241C22
 GodMode not found.
-Results saved to E:\MapleDumper\x64\Release\update.txt
+Results saved to E:\MapleAOB\x64\Release\update.txt
